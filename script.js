@@ -150,6 +150,7 @@ const wheelCenter = document.querySelector(".wheel-center");
 const navLinks = Array.from(document.querySelectorAll(".bottom-nav a"));
 const shareButton = document.querySelector("#shareButton");
 const SPOTIFY_URL = "https://open.spotify.com/track/2tX9QwcHOwWx01QSbLuB71";
+const SPOTIFY_URI = "spotify:track:2tX9QwcHOwWx01QSbLuB71";
 
 body.classList.add("locked");
 
@@ -159,7 +160,13 @@ openGift?.addEventListener("click", () => {
 });
 
 playToggle?.addEventListener("click", () => {
-  window.open(SPOTIFY_URL, "_blank");
+  // Tenta abrir o aplicativo via URI
+  window.location.href = SPOTIFY_URI;
+  
+  // Fallback: Se não abrir o app em 500ms, abre a versão web em uma nova aba
+  setTimeout(() => {
+    window.open(SPOTIFY_URL, "_blank");
+  }, 500);
 });
 
 shareButton?.addEventListener("click", async () => {
