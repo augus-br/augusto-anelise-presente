@@ -83,7 +83,7 @@ a {
   border-radius: 50%;
   background:
     linear-gradient(140deg, rgba(236, 64, 122, 0.34), rgba(66, 165, 245, 0.28)),
-    url("images/cover-main.jpg?v=2") center/cover;
+    url("images/cover-new-v1.jpg") center/cover;
   filter: saturate(1.15);
   opacity: 0.86;
   transform: translateY(-120px);
