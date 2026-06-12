@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presente Especial | Augusto ❤️ Anelise</title>
+  <meta name="description" content="Um presente digital interativo para celebrar momentos especiais." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-glow"></div>
+    <div class="intro-stack">
+      <div class="intro-badge">Presente especial</div>
+      <h1>Augusto preparou algo especial pra você!</h1>
+      <p>Um presente feito com todo amor para o Dia dos Namorados 💕</p>
+      <button class="primary-cta" id="openGift">Ver Presente</button>
+    </div>
+  </div>
+
+  <main class="app-shell" id="home">
+    <section class="hero">
+      <div class="hero-top">
+        <span class="playlist-kicker">Juntos para sempre ❤️</span>
+        <button class="round-button" aria-label="Compartilhar">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M18 16.1c-.76 0-1.44.3-1.96.77L8.9 12.72a3.2 3.2 0 0 0 0-1.44l7.05-4.1A2.98 2.98 0 1 0 15 5c0 .24.03.48.09.7L8.04 9.8a3 3 0 1 0 0 4.4l7.11 4.16c-.05.2-.08.41-.08.63a2.93 2.93 0 1 0 2.93-2.9Z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="cover-stage" aria-label="Capa do presente">
+        <figure class="cover-photo cover-photo-one">
+          <img src="images/cover-1.jpg" alt="Augusto e Anelise" />
+        </figure>
+        <figure class="cover-photo cover-photo-two">
+          <img src="images/cover-2.jpg" alt="Réveillon juntos" />
+        </figure>
+        <figure class="cover-photo cover-photo-three">
+          <img src="images/cover-3.jpg" alt="Viagem São Paulo" />
+        </figure>
+        <figure class="cover-photo cover-photo-four">
+          <img src="images/cover-4.jpg" alt="Noivado" />
+        </figure>
+        <div class="cover-center">
+          <img src="images/cover-main.jpg" alt="Augusto e Anelise" />
+        </div>
+      </div>
+
+      <section class="player-card" aria-label="Player da música">
+        <div class="track-art">
+          <img src="images/track-art.jpg" alt="Capa da música" />
+        </div>
+        <div class="track-info">
+          <h2>Amo Noite e Dia</h2>
+          <p>Jorge & Mateus</p>
+          <div class="progress-row" aria-hidden="true">
+            <span>0:00</span>
+            <div class="progress-bar"><span></span></div>
+            <span>-4:48</span>
+          </div>
+        </div>
+        <button class="play-button" id="playToggle" aria-label="Tocar música">
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 5h4v14H7zM13 5h4v14h-4z" />
+          </svg>
+        </button>
+      </section>
+    </section>
+
+    <section class="couple-card">
+      <img src="images/couple.jpg" alt="Augusto e Anelise" />
+      <div class="couple-content">
+        <span class="section-label">Sobre o casal</span>
+        <h2>Augusto e Anelise</h2>
+        <p>Juntos desde 30 de Janeiro de 2022</p>
+
+        <div class="time-grid" id="timeGrid">
+          <div><strong data-time="years">0</strong><span>Anos</span></div>
+          <div><strong data-time="months">0</strong><span>Meses</span></div>
+          <div><strong data-time="days">0</strong><span>Dias</span></div>
+          <div><strong data-time="hours">0</strong><span>Horas</span></div>
+          <div><strong data-time="minutes">0</strong><span>Minutos</span></div>
+          <div><strong data-time="seconds">0</strong><span>Segundos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-card" id="message">
+      <div>
+        <span class="section-label">Mensagem especial</span>
+        <p class="message-preview" id="messagePreview">
+          Meu chuchuzinho, desde aquele réveillon em 2021, minha vida ganhou
+          um sentido que eu nunca imaginei...
+        </p>
+        <p class="message-full" id="messageFull">
+          Meu chuchuzinho, desde aquele réveillon em 2021, minha vida ganhou
+          um sentido que eu nunca imaginei. Lembro do nosso primeiro beijo,
+          das borboletas no estômago, e de como em apenas alguns meses eu já
+          sabia que queria você pra sempre. Cada dia ao seu lado é uma
+          aventura: seja em Mineiros, Perolândia, Caiapônia, Jataí, Goiânia ou São Paulo, cada
+          lugar fica mais bonito porque você está comigo. Obrigado por ser
+          minha melhor amiga, minha parceira de vida e agora minha noiva.
+          Mal posso esperar pra te chamar de esposa. Eu te amo noite e dia,
+          hoje e sempre. Feliz Dia dos Namorados! ❤️
+        </p>
+      </div>
+      <button class="pill-button" id="showMessage">Mostrar Mensagem</button>
+    </section>
+
+    <section class="quick-section" id="library">
+      <h2>Conheça Augusto e Anelise</h2>
+      <div class="quick-grid">
+        <a class="quick-card" href="#timeline">
+          <img src="images/quick-dates.jpg" alt="Nossos Momentos" />
+          <span>Nossos Momentos</span>
+        </a>
+        <a class="quick-card" href="#gallery">
+          <img src="images/quick-fotos.jpg" alt="Nossas Fotos" />
+          <span>Nossas Fotos</span>
+        </a>
+        <a class="quick-card" href="#map">
+          <img src="images/quick-viagem.jpg" alt="Nossos Lugares" />
+          <span>Nossos Lugares</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrapped-card">
+      <div class="wrapped-copy">
+        <span>Conquistas</span>
+        <strong>17/30</strong>
+        <p>Momentos desbloqueados nessa história</p>
+      </div>
+      <div class="wrapped-art" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <button class="green-button">Wrapped</button>
+    </section>
+
+    <section class="section-block dark-block" id="timeline">
+      <div class="block-heading">
+        <span class="section-label">Vamos reviver a jornada?</span>
+        <h2>Nossa linha do tempo</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <time>31 Dez 2021</time>
+          <h3>Nosso Primeiro Encontro e Beijo 💋</h3>
+          <p>Réveillon inesquecível. Um olhar, uma conversa, um beijo — e tudo mudou pra sempre.</p>
+        </article>
+        <article>
+          <time>30 Jan 2022</time>
+          <h3>Pedido de Namoro 💍</h3>
+          <p>Em Jataí, com o coração acelerado, eu pedi pra ser seu e você disse sim.</p>
+        </article>
+        <article>
+          <time>Set 2024</time>
+          <h3>Viagem a São Paulo ✈️</h3>
+          <p>De 19 a 22 de setembro, exploramos a cidade grande juntos e criamos memórias incríveis.</p>
+        </article>
+        <article>
+          <time>31 Dez 2025</time>
+          <h3>Pedido de Noivado 💎</h3>
+          <p>No mesmo réveillon onde tudo começou, pedi sua mão. O círculo perfeito do nosso amor.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block wordle-block" id="search">
+      <div class="block-heading">
+        <span class="section-label">Nosso futuro juntos</span>
+        <h2>Descubra a palavra</h2>
+      </div>
+      <div class="wordle-game" data-target="CASAMENTO">
+        <p class="wordle-status" id="wordleStatus">Tente adivinhar a palavra de 9 letras.</p>
+        <div class="word-board" id="wordBoard" aria-label="Jogo de palavra"></div>
+        <div class="wordle-entry">
+          <input id="wordInput" type="text" maxlength="9" autocomplete="off" inputmode="text" aria-label="Palpite"
+            placeholder="Seu palpite" />
+          <button class="green-button" id="submitGuess">Enviar</button>
+        </div>
+        <div class="word-keyboard" id="wordKeyboard" aria-label="Teclado do jogo"></div>
+      </div>
+    </section>
+
+    <section class="section-block star-block">
+      <div class="block-heading">
+        <span class="section-label">O céu daquele dia</span>
+        <h2>Quando nossos mundos se encontraram</h2>
+      </div>
+      <div class="star-poster">
+        <canvas id="starCanvas" width="900" height="900"
+          aria-label="O céu na noite em que Augusto e Anelise se conheceram — 31/12/2021 em Mineiros, GO"></canvas>
+        <div class="star-copy">
+          <span>Mineiros, Goiás</span>
+          <strong>31 de Dezembro de 2021</strong>
+          <small>A noite em que nos encontramos · 17.569°S 52.551°W</small>
+        </div>
+      </div>
+      <p class="map-caption">O céu de Mineiros, GO na noite do nosso primeiro encontro ✨</p>
+    </section>
+
+    <section class="section-block map-block" id="map">
+      <div class="block-heading">
+        <span class="section-label">Por onde a gente passou</span>
+        <h2>Mapa de memórias</h2>
+      </div>
+      <div class="journey-map" id="journeyMap">
+        <svg class="map-illustration" viewBox="0 0 900 520" aria-hidden="true">
+          <path class="continent continent-one"
+            d="M142 196c34-56 96-75 148-52 30 14 39 43 68 51 45 12 65-44 113-32 39 9 55 55 43 90-14 41-62 42-72 81-8 33 22 58 4 83-21 31-80 17-131 4-89-24-169-31-209-95-22-35-20-85 36-130Z" />
+          <path class="continent continent-two"
+            d="M543 128c70-42 167-20 206 35 40 56 9 126-43 145-45 16-75-15-113 10-29 19-25 54-58 65-36 12-87-18-97-60-11-45 32-68 24-108-8-39 37-70 81-87Z" />
+          <path class="continent continent-three"
+            d="M589 337c47-14 92 2 112 34 17 28 6 66-19 86-31 25-84 13-110-20-25-32-19-87 17-100Z" />
+          <path class="map-route" d="M335 303 C 398 254, 462 247, 530 289 S 653 353, 720 244" />
+        </svg>
+        <div class="map-radar"></div>
+        <button class="journey-pin active" style="--x: 28%; --y: 58%" data-place="0" aria-label="Mineiros">
+          <span></span>
+        </button>
+        <button class="journey-pin" style="--x: 20%; --y: 40%" data-place="1" aria-label="Jataí">
+          <span></span>
+        </button>
+        <button class="journey-pin" style="--x: 42%; --y: 32%" data-place="2" aria-label="Goiânia">
+          <span></span>
+        </button>
+        <button class="journey-pin" style="--x: 58%; --y: 52%" data-place="3" aria-label="São Paulo">
+          <span></span>
+        </button>
+        <button class="journey-pin" style="--x: 35%; --y: 65%" data-place="4" aria-label="Perolândia">
+          <span></span>
+        </button>
+        <button class="journey-pin" style="--x: 75%; --y: 38%" data-place="5" aria-label="Caiapônia">
+          <span></span>
+        </button>
+        <article class="map-note" id="placeCard">
+          <img id="placeImage" src="images/place-mineiros.jpg" alt="Lugar especial" />
+          <div>
+            <time id="placeDate">31/12/2021</time>
+            <strong id="placeTitle">Mineiros</strong>
+            <p id="placeText">Onde tudo começou. Nossa cidade, nosso lar, nosso começo de história.</p>
+            <span id="placePolaroid">Nosso cantinho no mundo 🏠</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="block-heading">
+        <span class="section-label">Reviva os melhores momentos</span>
+        <h2>Galeria de fotos</h2>
+      </div>
+      <div class="gallery-track">
+        <article>
+          <img src="images/gallery-1.jpg" alt="Nosso primeiro momento" />
+          <h3>Nosso início</h3>
+          <p>O começo de uma história que a gente escreve juntos todos os dias.</p>
+        </article>
+        <article>
+          <img src="images/gallery-2.jpg" alt="Momentos juntos" />
+          <h3>Nossos sorrisos</h3>
+          <p>Cada risada ao seu lado vale mais que qualquer coisa no mundo.</p>
+        </article>
+        <article>
+          <img src="images/gallery-3.jpg" alt="Natal juntos" />
+          <h3>Celebrando juntos</h3>
+          <p>Os momentos especiais ficam ainda mais lindos com você.</p>
+        </article>
+        <article>
+          <img src="images/noivado.jpg" alt="Noivado" />
+          <h3>Noivos! 💍</h3>
+          <p>O sim mais lindo que eu já ouvi. Mal posso esperar pelo nosso casamento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="roulette-section">
+      <div class="block-heading">
+        <span class="section-label">A sorte escolhe</span>
+        <h2>Para onde vamos sair hoje?</h2>
+      </div>
+      <div class="roulette-shell">
+        <div class="wheel-pointer"></div>
+        <div class="wheel" id="wheel" aria-label="Roleta de opções"></div>
+        <div class="wheel-center">?</div>
+      </div>
+      <button class="green-button" id="spinWheel">Girar roleta</button>
+      <p class="roulette-result" id="rouletteResult">Toque para sortear o próximo date.</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegacao principal">
+    <a href="#home" class="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+      </svg>
+      <span>Início</span>
+    </a>
+    <a href="#search">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m21 21-4.35-4.35M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4z" />
+      </svg>
+      <span>Pesquisar</span>
+    </a>
+    <a href="#library">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 4h3v16H5zM10.5 4h3v16h-3zM16 5.5l2.9-.8 4.1 14.8-2.9.8z" />
+      </svg>
+      <span>Sua biblioteca</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

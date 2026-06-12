@@ -1,0 +1,7 @@
+node_modules/
+deploy/
+photos_extracted/
+prewedding_extracted/
+*.zip
+.DS_Store
+Thumbs.db
