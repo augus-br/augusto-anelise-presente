@@ -148,6 +148,8 @@ const spinWheel = document.querySelector("#spinWheel");
 const rouletteResult = document.querySelector("#rouletteResult");
 const wheelCenter = document.querySelector(".wheel-center");
 const navLinks = Array.from(document.querySelectorAll(".bottom-nav a"));
+const shareButton = document.querySelector("#shareButton");
+const SPOTIFY_URL = "https://open.spotify.com/track/2tX9QwcHOwWx01QSbLuB71";
 
 body.classList.add("locked");
 
@@ -157,7 +159,29 @@ openGift?.addEventListener("click", () => {
 });
 
 playToggle?.addEventListener("click", () => {
-  playerCard.classList.toggle("is-playing");
+  window.open(SPOTIFY_URL, "_blank");
+});
+
+shareButton?.addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: "Presente Especial | Augusto ❤️ Anelise",
+        text: "Veja esse presente especial que o Augusto preparou!",
+        url: window.location.href,
+      });
+    } catch (err) {
+      console.error("Erro ao compartilhar:", err);
+    }
+  } else {
+    // Fallback: Copiar link
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      alert("Link copiado para a área de transferência!");
+    } catch (err) {
+      console.error("Erro ao copiar link:", err);
+    }
+  }
 });
 
 showMessage?.addEventListener("click", () => {
