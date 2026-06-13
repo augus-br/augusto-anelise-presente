@@ -58,7 +58,7 @@ const PLACES = [
     title: "Caiapônia",
     text: "Visitar a família — porque amar você é amar tudo que faz parte de você.",
     polaroid: "Família é tudo 💕",
-    image: "images/place-mineiros.jpg",
+    image: "images/place-caiaponia.jpg",
   },
 ];
 
