@@ -51,7 +51,7 @@ const PLACES = [
     title: "Perolândia",
     text: "A cidade da minha noiva. Cada visita é voltar pra casa, porque onde você está é meu lar.",
     polaroid: "Terra da Anelise ❤️",
-    image: "images/place-mineiros.jpg",
+    image: "images/place-perolandia.jpg",
   },
   {
     date: "Sempre",
