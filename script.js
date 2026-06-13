@@ -10,10 +10,10 @@ const CONFIG = {
     { text: "Maratona de filmes 🎬", color: "#42A5F5" },
     { text: "Passeio no parque 🌳", color: "#EC407A" },
     { text: "Cozinhar juntos 👩‍🍳", color: "#42A5F5" },
-    { text: "Dia de spa 💆", color: "#EC407A" },
-    { text: "Viagem surpresa ✈️", color: "#42A5F5" },
     { text: "Piquenique 🧂", color: "#EC407A" },
-    { text: "Dançar juntos 💃", color: "#42A5F5" },
+    { text: "Noite de jogos 🎲", color: "#42A5F5" },
+    { text: "Sair para tomar sorvete ou açaí 🍦", color: "#EC407A" },
+    { text: "Experimentar uma cafeteria nova ☕", color: "#42A5F5" },
   ],
 };
 
