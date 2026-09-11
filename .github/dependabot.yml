@@ -5,9 +5,9 @@ updates:
     directory: /
     schedule:
       interval: weekly
-      day: monday
-      time: "07:05"
-      timezone: America/Sao_Paulo
+      day: thursday
+      time: 05:04
+      timezone: Etc/UTC
     cooldown:
       default-days: 7
     open-pull-requests-limit: 5
@@ -24,9 +24,9 @@ updates:
     directory: /
     schedule:
       interval: weekly
-      day: monday
-      time: "07:15"
-      timezone: America/Sao_Paulo
+      day: friday
+      time: 08:15
+      timezone: Etc/UTC
     cooldown:
       default-days: 7
     open-pull-requests-limit: 5
